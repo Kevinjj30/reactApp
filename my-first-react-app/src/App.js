@@ -4,48 +4,7 @@ import List from './components/List';
 
 export default class App extends Component {
 
-//   constructor(props) {
-//       super(props);
-//       this.state = { items: [], text: '' };
-//       this.removeItem = this.removeItem.bind(this);
-//     }
-   
-  
-// 	 onChange = (event) => {
-// 		this.setState({ term: event.target.value });
-// 	} //allows me to enter text
 
-//   	onSubmit = (event) => {
-//     	event.preventDefault();
-// 		this.setState({
-// 			term: '',
-// 			items: [...this.state.items, this.state.term]
-// 		});
-//     }
-
-//     removeItem(index) {
-//       const items = this.state.items.filter((item, itemsIndex) => {
-//         return itemsIndex !== index
-//       })
-//       this.setState({ items })
-//     }
-
-// 	render() {
-// 		return (
-// 			<div>
-// 				<form className="App" onSubmit={this.onSubmit}>
-// 					<input value={this.state.term} onChange={this.onChange} />
-// 					<button>Submit</button>
-// 				</form>
-//         <List 
-//         items={this.state.items}
-//         removeItem={this.removeItem}
-//          />
-// 			</div>
-      
-// 		);
-// 	}
-// }
 
 
 constructor(props){
@@ -96,45 +55,3 @@ render(){
 }
 
 
-// constructor(props) {
-//   super(props);
-//   this.state = { todos: [], text: '' };
-//   this.removeTodo = this.removeTodo.bind(this);
-// }
-
-// addTodo(e) {
-//   e.preventDefault();
-//   this.setState({ 
-//     todos: [ this.state.text, ...this.state.todos ],
-//     text: ''
-//   });
-// }
-
-// removeTodo(name, i){
-//   let todos = this.state.todos.slice();
-//   todos.splice(i, 1);
-//   this.setState({
-//       todos
-//   });
-// }
-
-// updateValue(e) {
-//   this.setState({ text: e.target.value})
-// }
-
-// render() {
-//   return(
-//       <div>
-//           <form onSubmit = {(e) => this.addTodo(e)}>
-//               <input
-//                   placeholder="Add Todo"
-//                   value={this.state.text}
-//                   onChange={(e) => {this.updateValue(e)}}
-//               />
-//               <button type="submit">Add Todo</button>
-//           </form>
-//           <TodoList todos={this.state.todos} removeTodo={this.removeTodo}/>
-//       </div>
-//   );
-// }
-// }
